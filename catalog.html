@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
    <header class="page-header">
      <a href="index.html" class="header-logo">
-       <img class="logo" src="" alt="Логотип Интернет-магазин гаджетов Device">
+       <img class="logo" src="images/black-logo.svg" alt="Логотип Интернет-магазин гаджетов Device">
      </a>
      <div class="search">
        <input type="text" class="serach-text" value="Текст поиска">
@@ -24,8 +25,8 @@
         <li class="user-item">
           <a href="#" class="user-link">Корзина</a>
         </li>
-        <h2 class="catalog-title">Каталог</h2>
        </ul>
+       <a href="#" class="catalog-title">Каталог товаров</a>
        <ul class="dropdown-catalog">
          <li class="catalog-item visually-hidden">
            <a href="#" class="catalog-link">Виртуальная реальность</a>
@@ -77,64 +78,55 @@
           </ul>
        </header>    
        <section class="catalog-products">
+         <div class="filters">
         <h2 class="filter">Фильтр:</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-
-
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Цвет</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="black" checked>
-
                   Черный
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="white" checked>
-
                   Белый
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="blue">
-
                   Синий
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="red">
-
                   Красный
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="pink">
-
                   Розовый
                 </label>
             </ul>
           </fieldset>
-
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Bluetooth</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="product-group" value="true" checked>
-
               Есть
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="product-group" value="false">
-
               Нет
                 </label>
           </fieldset>
@@ -150,10 +142,11 @@
           <option value="cheap">Дешёвые</option>
           <option value="expensive">Дорогие</option>
         </select>
+      </div>
         <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="images/product-2.jpg" alt="">
               <h3 class="product-card-title">Любительская
                 селфи-палка</h3>
             </a>
@@ -161,14 +154,14 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="images/product-3.jpg" alt="">
               <h3 class="product-card-title">Профессиональная селфи-палка </h3>
             </a>
             <span class="product-card-price">1500 ₽</span>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="images/product-4.jpg" alt="">
               <h3 class="product-card-title">Непотопляемая
                 селфи-палка</h3>
             </a>
@@ -176,7 +169,7 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="images/product-5.jpg" alt="">
               <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
             </a>
             <span class="product-card-price">1500 ₽</span>
@@ -206,15 +199,15 @@
           </li>
           <li class="pagination-item">
             <a class="pagination-link pagination-next" href="#">
-              <span class="pagination-button">вперед</span>
+              <span class="pagination-button">вперёд</span>
             </a>
           </li>
         </ul>
       </section>
     </main>
     <footer class="page-footer">
-        <a href="#" class="footer-logo">
-          <img src="" alt="Логотип Интернет-магазин гаджетов Device">
+        <a href="index.html" class="footer-logo">
+          <img src="images/yeelow-logo.svg" alt="Логотип Интернет-магазин гаджетов Device">
         </a>
         <p class="footer-adress">
           Санкт-Петербург, набережная
@@ -257,7 +250,7 @@
           </ul>
         </section>
         <a class="htmlacademy-link" href="https://htmlacademy.ru/profile/id1942651">
-          <img src="" alt="Логотип HTML Academy" class="htmlacademy-logo">
+          <img src="images/html-academy-logo.svg" alt="Логотип HTML Academy" class="htmlacademy-logo">
         </a>
       </footer>
   </body>
