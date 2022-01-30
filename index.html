@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
    <header class="page-header">
@@ -10,7 +11,7 @@
        "Интернет-магазин гаджетов Device"
      </h1>
      <a href="#" class="header-logo">
-       <img class="logo" src="" alt="Логотип Интернет-магазин гаджетов Device">
+       <img class="logo" src="images/black-logo.svg" alt="Логотип Интернет-магазин гаджетов Device">
      </a>
      <div class="search">
        <input type="text" class="serach-text" value="Текст поиска">
@@ -27,8 +28,8 @@
         <li class="user-item">
           <a href="#" class="user-link">Корзина</a>
         </li>
-        <h2 class="catalog-title">Каталог</h2>
-       </ul>
+      </ul>
+        <a href="#" class="catalog-title">Каталог товаров</a>
        <ul class="dropdown-catalog">
          <li class="catalog-item visually-hidden">
            <a href="#" class="catalog-link">Виртуальная реальность</a>
@@ -65,13 +66,13 @@
    <main class="index-main">
     <section class="production-slides">
       <h2 class="production-slides-title ">Презентация товаров</h2>
-      <img class="slider-image" src="" alt="Примеры товаров." >
+      <img class="slider-image" src="images/slider-1.jpg" alt="Примеры товаров." >
       <button class="slider-button slider-prev" type="button">
         <span class="visually-hidden">Предыдущий товар</span>
       </button>
       <h3 class="description-title">
         Порхает как бабочка,
-        жалит как пчела!
+       <br> жалит как пчела!
       </h3>
       <p class="description-text">
         Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
@@ -83,10 +84,10 @@
       <table class="specifications">
         <tr class="specifications-item">
           <td class="specifications">
-            <b>800 M</b>
+            <span>800 M</span>
           </td>
-          <td class="specifications-text">
-           <b>50 M</b>
+          <td class="specifications">
+           <span>50 M</span>
           </td>
         </tr>
         <tr class="specifications-item">
@@ -121,65 +122,89 @@
     </section>
     <section class="product-list">
       <h2 class="product-list-title visually-hidden">
-        Список катекорий товара
+        Список категорий товара
       </h2>
       <ul class="product-item">
         <li class="product-links">
-         <a href="#" class="">
-          <img src="" alt="Очки виртуальной реальности">
+         <a href="#" class="product-links-link">
+          <img src="images/vr.svg" alt="Очки виртуальной реальности" width="97px" height="55px">
          </a>
         </li>
+         <p>
+          Виртуальная 
+         <br> реальность
+         </p>
         <li class="product-links">
-          <a href="#" class="">
-           <img src="" alt="Моноподы">
+          <a href="#" class="product-links-link">
+           <img src="images/monopod.svg" alt="Моноподы" >
           </a>
          </li>
+         <p>
+          Моноподы 
+         <br> для селфи
+         </p>
          <li class="product-links">
-          <a href="#" class="">
-           <img src="" alt="Экшен-камеры">
+          <a href="#" class="product-links-link">
+           <img src="images/action-camera.svg" alt="Экшен-камеры">
           </a>
          </li>
+         <p>Экшн-камеры</p>
          <li class="product-links">
-          <a href="#" class="">
-           <img src="" alt="Фитнес-браслеты">
+          <a href="#" class="product-links-link">
+           <img src="images/fitness-braslet.svg" alt="Фитнес-браслеты">
           </a>
          </li>
+         <p>Фитнес-браслеты</p>
          <li class="product-links">
-          <a href="#" class="">
-           <img src="" alt="Умные часы">
+          <a href="#" class="product-links-link">
+           <img src="images/smart-watch.svg" alt="Умные часы">
           </a>
          </li>
+         <p>Умные часы</p>
          <li class="product-links">
-          <a href="#" class="">
-           <img src="" alt="Квадрокоптеры">
+          <a href="#" class="product-links-link">
+           <img src="images/copter.svg" alt="Квадрокоптеры">
           </a>
          </li>
+         <p>Квадрокоптеры</p>
       </ul>
     </section>
-    <article class="main-user-advantages">
+    <section class="main-user-advantages">
       <ul class="main-user-advantages-item">
        <li class="main-user-advantages-links">
-        <a href="" class="">Доставка</a>
+        <a href="" class="main-user-advantages-links-link curent-advantage">Доставка</a>
        </li>
       <li class="main-user-advantages-links">
-        <a href="" class="">Гарантия</a>
+        <a href="" class="main-user-advantages-links-link">Гарантия</a>
        </li>
        <li class="main-user-advantages-links">
-        <a href="" class="">Кредит</a>
+        <a href="" class="main-user-advantages-links-link">Кредит</a>
        </li>
       </ul>
-      <h2 class="main-user-advantages-title">
+      <ul class="deliveryboy">
+        <li>
+      <h2 class="deliveryboy-title">
         Доставка
       </h2>
-      <p class="main-user-advantages-text">
+      <p class="deliveryboy-text">
         Мы с удовольствием доставим ваш товар прямо
         к вашему подъезду совершенно бесплатно! Ведь
         мы неплохо заработаем, поднимая его на ваш этаж.
       </p>
-    </article>
-    <h2 class="delivery">
+      </li>
+      <li>
+        <img src="images/deliveryboy-logo.svg" alt="Логотип доставки">
+      </li>
+    </ul>
+    </section>
+    <aside class="delivery">
+    <div class="delivery-logo">
+      <img src="images/delivery-logo.svg" alt="Логотип доставки">
+    </div>
+    <h2 class="delivery-text">
       Доставим редкий товар под заказ
     </h2>
+    </aside> 
     <section class="about-company">
       <h2 class="about-company-title">
         О нас
@@ -201,7 +226,8 @@
           ТоксБерри
         </li>
       </ul>
-      <a href="" class="button-about-company">Подробнее о нас
+      <a href="" class="button-about-company">
+        Подробнее о нас
       </a>
     </section>
     <section class="contacts">
@@ -215,11 +241,11 @@
      <h3>
       Интернет-магазин «Девайс»
      </h3>
-     <p class="contacts-adress">
+     <address class="contacts-adress">
       Санкт-Петербург, набережная реки Карповки, 5, литера П.
       <br>
       <a class="contacts-telephone" href="tel+7 (812) 812-12-12">+7 (812) 812-12-12</a>
-     </p>
+     </address>
      <h3>
       Время работы
      </h3>
@@ -231,11 +257,14 @@
           сб—вс: с 10:00 до 19:00
         </li>
      </ul>
+     <a href="" class="button-about-company">
+      Напишите нам
+    </a>
     </section>
     <section class="distribution">
       <h2 class="distribution-title">
         Подпишитесь
-        на рассылку
+       <br> на рассылку
       </h2>
       <form class="distribution-form" action="https://echo.htmlacademy.ru/" method="post">
         <input class="field" placeholder="email@example.com" type="email" name="distribution-email" required>
@@ -254,12 +283,12 @@
   </main>
     <footer class="page-footer">
       <a href="#" class="footer-logo">
-        <img src="" alt="Логотип Интернет-магазин гаджетов Device">
+        <img src="images/yeelow-logo.svg" alt="Логотип Интернет-магазин гаджетов Device">
       </a>
-      <p class="footer-adress">
+      <address class="footer-adress">
         Санкт-Петербург, набережная
-        реки Карповки, 5, литера П.
-      </p>
+       <br> реки Карповки, 5, литера П.
+      </address>
       <section class="nav-user">
         <h2 class="visually-hidden">
           Навигация для клиента
@@ -276,7 +305,7 @@
         </li>
         </ul>
       </section>
-      <a class="footer-contacts-telephone" href="tel:+7 (812) 812-12-12">+7 (812) 812-12-12</a>
+      <a class="footer-contacts-telephone" href="tel:+7 (812) 812-12-12">Тел.: +7 (812) 812-12-12</a>
       <section class="socials">
         <ul class="socials-item">
           <li class="socials-link">
@@ -297,7 +326,7 @@
         </ul>
       </section>
       <a class="htmlacademy-link" href="https://htmlacademy.ru/profile/id1942651">
-        <img src="" alt="Логотип HTML Academy" class="htmlacademy-logo">
+        <img src="images/html-academy-logo.svg" alt="Логотип HTML Academy" class="htmlacademy-logo">
       </a>
     </footer>
   </body>
