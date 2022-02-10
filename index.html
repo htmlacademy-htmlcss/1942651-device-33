@@ -17,7 +17,7 @@
        <input type="text" class="serach-text" value="Текст поиска">
        <button type="submit" class="search-button">Найти</button>
      </div>
-     <nav>
+     <nav class="navigation">
        <ul class="nav-user">
          <li class="user-item">
            <a href="#" class="user-link">Войти</a>
@@ -30,8 +30,19 @@
         </li>
       </ul>
         <a href="#" class="catalog-title">Каталог товаров</a>
-       <ul class="dropdown-catalog">
-         <li class="catalog-item visually-hidden">
+        <ul class="user-advantages">
+          <li class="user-advantages-item">
+           <a href="#" class="user-advantages-link">Доставка</a>
+          </li>
+          <li class="user-advantages-item">
+           <a href="#" class="user-advantages-link">Гарантия</a>
+          </li>
+          <li class="user-advantages-item">
+           <a href="#" class="user-advantages-link">Контакты</a>
+          </li>
+        </ul>
+       <ul class="dropdown-catalog ">
+         <li class="catalog-item ">
            <a href="#" class="catalog-link">Виртуальная реальность</a>
          </li>
          <li class="catalog-item">
@@ -50,33 +61,30 @@
           <a href="#" class="catalog-link">Квадрокоптеры</a>
         </li>
        </ul>
-       <ul class="user-advantages">
-         <li class="user-advantages-item">
-          <a href="#" class="user-advantages-link">Доставка</a>
-         </li>
-         <li class="user-advantages-item">
-          <a href="#" class="user-advantages-link">Гарантия</a>
-         </li>
-         <li class="user-advantages-item">
-          <a href="#" class="user-advantages-link">Контакты</a>
-         </li>
-       </ul>
+
      </nav>
    </header>
-   <main class="index-main">
-    <section class="production-slides">
-      <h2 class="production-slides-title ">Презентация товаров</h2>
-      <img class="slider-image" src="images/slider-1.jpg" alt="Примеры товаров." >
+   <main class="index-main main-container">
+     <div class="page-container">
+    <section class="production-slides container">
+      <div class="slide-container-item">
+      <h2 class="production-slides-title visually-hidden">Презентация товаров</h2>
+      <button class="slider-button slider-next" type="button">
+        <span class="visually-hidden">Следущий товар</span>
+      </button>
+      <img class="slider-image" src="images/slider-1.png" alt="Примеры товаров."  width="500">
       <button class="slider-button slider-prev" type="button">
         <span class="visually-hidden">Предыдущий товар</span>
       </button>
+    </div>
+      <div class="description">
       <h3 class="description-title">
         Порхает как бабочка,
        <br> жалит как пчела!
       </h3>
       <p class="description-text">
-        Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-         замаскированным под стандартную камеру.
+        Этот обычный, на первый взгляд, квадрокоптер оснащен
+        <br> мощным лазером,замаскированным под стандартную камеру.
       </p>
       <a href="#" class="description-button"> 
         Подробнее
@@ -99,9 +107,6 @@
           </td>
         </tr>
       </table>
-      <button class="slider-button slider-next" type="button">
-        <span class="visually-hidden">Следущий товар</span>
-      </button>
       <ol class="slider-pagination">
         <li class="slider-pagination-item">
           <button class="slider-pagination-button slider-pagination-button-current" type="button">
@@ -119,57 +124,71 @@
           </button>
         </li>
       </ol>
+    </div>
     </section>
-    <section class="product-list">
+    <section class="product-list container">
       <h2 class="product-list-title visually-hidden">
         Список категорий товара
       </h2>
       <ul class="product-item">
         <li class="product-links">
          <a href="#" class="product-links-link">
-          <img src="images/vr.svg" alt="Очки виртуальной реальности" width="97px" height="55px">
+          <img src="images/vr.svg" alt="Очки виртуальной реальности">
          </a>
         </li>
-         <p>
-          Виртуальная 
-         <br> реальность
-         </p>
         <li class="product-links">
           <a href="#" class="product-links-link">
            <img src="images/monopod.svg" alt="Моноподы" >
           </a>
          </li>
-         <p>
-          Моноподы 
-         <br> для селфи
-         </p>
          <li class="product-links">
           <a href="#" class="product-links-link">
            <img src="images/action-camera.svg" alt="Экшен-камеры">
           </a>
          </li>
-         <p>Экшн-камеры</p>
          <li class="product-links">
           <a href="#" class="product-links-link">
            <img src="images/fitness-braslet.svg" alt="Фитнес-браслеты">
           </a>
          </li>
-         <p>Фитнес-браслеты</p>
          <li class="product-links">
           <a href="#" class="product-links-link">
            <img src="images/smart-watch.svg" alt="Умные часы">
           </a>
          </li>
-         <p>Умные часы</p>
          <li class="product-links">
           <a href="#" class="product-links-link">
            <img src="images/copter.svg" alt="Квадрокоптеры">
           </a>
          </li>
-         <p>Квадрокоптеры</p>
       </ul>
     </section>
+    <div class="product-name container">
+      <ul class="product-name-container">
+        <li class="product-name-item">
+          Виртуальная 
+          <br> реальность
+        </li>
+        <li class="product-name-item" >
+          Моноподы 
+          <br> для селфи
+        </li>
+        <li class="product-name-item">
+          Экшн-камеры
+        </li>
+        <li class="product-name-item">
+          Фитнес-браслеты
+        </li>
+        <li class="product-name-item">
+          Умные часы
+        </li>
+        <li class="product-name-item">
+          Квадрокоптеры
+        </li>
+      </ul>
+    </div>
     <section class="main-user-advantages">
+      <div class="container ">
       <ul class="main-user-advantages-item">
        <li class="main-user-advantages-links">
         <a href="" class="main-user-advantages-links-link curent-advantage">Доставка</a>
@@ -188,23 +207,25 @@
       </h2>
       <p class="deliveryboy-text">
         Мы с удовольствием доставим ваш товар прямо
-        к вашему подъезду совершенно бесплатно! Ведь
-        мы неплохо заработаем, поднимая его на ваш этаж.
+        <br> к вашему подъезду совершенно бесплатно! Ведь
+        <br> мы неплохо заработаем, поднимая его на ваш этаж.
       </p>
       </li>
       <li>
         <img src="images/deliveryboy-logo.svg" alt="Логотип доставки">
       </li>
     </ul>
+    </div>
     </section>
-    <aside class="delivery">
+    <div class="delivery container">
     <div class="delivery-logo">
-      <img src="images/delivery-logo.svg" alt="Логотип доставки">
+      <img src="images/delivery-logo.svg" alt="">
     </div>
     <h2 class="delivery-text">
       Доставим редкий товар под заказ
     </h2>
-    </aside> 
+    </div>
+    <div class="flex-container container">
     <section class="about-company">
       <h2 class="about-company-title">
         О нас
@@ -261,27 +282,46 @@
       Напишите нам
     </a>
     </section>
+  </div> 
     <section class="distribution">
-      <h2 class="distribution-title">
+      <div class="container">
+        <ul class="distribution-list">
+      <li>
+        <h2 class="distribution-title">
         Подпишитесь
        <br> на рассылку
       </h2>
+      </li>
+      <li> 
+      <p class="distribution-text">
+        Еженедельный дайджест с обзорами новинок,
+        <br> длительными тест-драйвами, распаковками, а также акции,
+        <br> спецпредложения и вот это вот всё.
+      </p>
+      </li>
+       </ul>
+       <ul class="distribution-form">
+         <li>
       <form class="distribution-form" action="https://echo.htmlacademy.ru/" method="post">
         <input class="field" placeholder="email@example.com" type="email" name="distribution-email" required>
         <button class="button newsletter-button" type="submit">
           Подписаться
         </button>
       </form>
-      <p class="distribution-text">
-        Еженедельный дайджест с обзорами новинок,
-        длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
-      </p>
+      </li>
+       <li>
       <p class="free">
         Это бесплатно
       </p>
+      </li>
+    </ul>
+    </div>
     </section>
+  </div>
   </main>
     <footer class="page-footer">
+      <div class="container">
+        <div class="footer-logcontainer">
       <a href="#" class="footer-logo">
         <img src="images/yeelow-logo.svg" alt="Логотип Интернет-магазин гаджетов Device">
       </a>
@@ -289,7 +329,8 @@
         Санкт-Петербург, набережная
        <br> реки Карповки, 5, литера П.
       </address>
-      <section class="nav-user">
+       </div>
+      <section class="nav-user-footer">
         <h2 class="visually-hidden">
           Навигация для клиента
         </h2>
@@ -304,30 +345,37 @@
           <a href="#">Контакты</a>
         </li>
         </ul>
+          <ul class="socials-item">
+            <li class="socials-link">
+             <a href="https://www.facebook.com/htmlacademy">
+               <img class="visually-hidden" src="" alt="facebook">
+             </a>
+            </li>
+            <li class="socials-link">
+              <a href="https://www.instagram.com/htmlacademy/">
+                <img class="visually-hidden" src="" alt="instagram">
+              </a>
+             </li>
+             <li class="socials-link">
+              <a href="https://twitter.com/htmlacademy_ru">
+                <img class="visually-hidden" src="" alt="twitter">
+              </a>
+             </li>
+          </ul>
       </section>
+      <div class="footer-contacts-container">
+        <ul>
+          <li>
       <a class="footer-contacts-telephone" href="tel:+7 (812) 812-12-12">Тел.: +7 (812) 812-12-12</a>
-      <section class="socials">
-        <ul class="socials-item">
-          <li class="socials-link">
-           <a href="https://www.facebook.com/htmlacademy">
-             <img src="" alt="facebook">
-           </a>
           </li>
-          <li class="socials-link">
-            <a href="https://www.instagram.com/htmlacademy/">
-              <img src="" alt="instagram">
-            </a>
-           </li>
-           <li class="socials-link">
-            <a href="https://twitter.com/htmlacademy_ru">
-              <img src="" alt="twitter">
-            </a>
-           </li>
-        </ul>
-      </section>
+          <li>
       <a class="htmlacademy-link" href="https://htmlacademy.ru/profile/id1942651">
         <img src="images/html-academy-logo.svg" alt="Логотип HTML Academy" class="htmlacademy-logo">
       </a>
+         </li>
+        </ul>
+     </div>
+    </div>
     </footer>
   </body>
 </html>

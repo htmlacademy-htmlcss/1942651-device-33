@@ -6,63 +6,66 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-   <header class="page-header">
-     <a href="index.html" class="header-logo">
-       <img class="logo" src="images/black-logo.svg" alt="Логотип Интернет-магазин гаджетов Device">
-     </a>
-     <div class="search">
-       <input type="text" class="serach-text" value="Текст поиска">
-       <button type="submit" class="search-button">Найти</button>
-     </div>
-     <nav>
-       <ul class="nav-user">
-         <li class="user-item">
-           <a href="#" class="user-link">Профиль</a>
+    <header class="page-header">
+      <h1 class="visually-hidden">
+        "Интернет-магазин гаджетов Device"
+      </h1>
+      <a href="#" class="header-logo">
+        <img class="logo" src="images/black-logo.svg" alt="Логотип Интернет-магазин гаджетов Device">
+      </a>
+      <div class="search">
+        <input type="text" class="serach-text" value="Текст поиска">
+        <button type="submit" class="search-button">Найти</button>
+      </div>
+      <nav class="navigation">
+        <ul class="nav-user">
+          <li class="user-item">
+            <a href="#" class="user-link">Профиль</a>
+          </li>
+          <li class="user-item">
+           <a href="#" class="user-link">Сравнить</a>
          </li>
          <li class="user-item">
-          <a href="#" class="user-link">Сравнить</a>
-        </li>
-        <li class="user-item">
-          <a href="#" class="user-link">Корзина</a>
-        </li>
+           <a href="#" class="user-link">Корзина</a>
+         </li>
        </ul>
-       <a href="#" class="catalog-title">Каталог товаров</a>
-       <ul class="dropdown-catalog">
-         <li class="catalog-item visually-hidden">
-           <a href="#" class="catalog-link">Виртуальная реальность</a>
+         <a href="#" class="catalog-title">Каталог товаров</a>
+         <ul class="user-advantages">
+           <li class="user-advantages-item">
+            <a href="#" class="user-advantages-link">Доставка</a>
+           </li>
+           <li class="user-advantages-item">
+            <a href="#" class="user-advantages-link">Гарантия</a>
+           </li>
+           <li class="user-advantages-item">
+            <a href="#" class="user-advantages-link">Контакты</a>
+           </li>
+         </ul>
+        <ul class="dropdown-catalog ">
+          <li class="catalog-item ">
+            <a href="#" class="catalog-link">Виртуальная реальность</a>
+          </li>
+          <li class="catalog-item">
+           <a href="catalog.html" class="catalog-link">Моноподы для селфи</a>
          </li>
          <li class="catalog-item">
-          <a href="catalog.html" class="catalog-link">Моноподы для селфи</a>
-        </li>
-        <li class="catalog-item">
-          <a href="#" class="catalog-link">Экшен-камеры</a>
-        </li>
-        <li class="catalog-item">
-          <a href="#" class="catalog-link">Фитнес-браслеты</a>
-        </li>
-        <li class="catalog-item">
-          <a href="#" class="catalog-link">Умные часы</a>
-        </li>
-        <li class="catalog-item">
-          <a href="#" class="catalog-link">Квадрокоптеры</a>
-        </li>
-       </ul>
-       <ul class="user-advantages">
-         <li class="user-advantages-item">
-          <a href="#" class="user-advantages-link">Доставка</a>
+           <a href="#" class="catalog-link">Экшен-камеры</a>
          </li>
-         <li class="user-advantages-item">
-          <a href="#" class="user-advantages-link">Гарантия</a>
+         <li class="catalog-item">
+           <a href="#" class="catalog-link">Фитнес-браслеты</a>
          </li>
-         <li class="user-advantages-item">
-          <a href="#" class="user-advantages-link">Контакты</a>
+         <li class="catalog-item">
+           <a href="#" class="catalog-link">Умные часы</a>
          </li>
-       </ul>
-     </nav>
-   </header>
-   <main class="catalog-main">
-       <header class="catalog-header">
-        <h1 class="catalog-title">
+         <li class="catalog-item">
+           <a href="#" class="catalog-link">Квадрокоптеры</a>
+         </li>
+        </ul>
+      </nav>
+    </header>
+   <main class="catalog-main main-container-catalog">
+       <header class="catalog-header container">
+        <h1 class="catalog-title-catalog">
             Моноподы для селфи
         </h1>
         <ul class="breadcrumbs">
@@ -76,11 +79,11 @@
                 <a class="breadcrumbs-link">Моноподы для селфи</a>
               </li>
           </ul>
-       </header>    
+       </header> 
+       <div class="page-container-catalog">
        <section class="catalog-products">
-         <div class="filters">
-        <h2 class="filter">Фильтр:</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <h2 class="filter">Фильтр:</h2>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Цвет</legend>
             <ul class="catalog-filter-list">
@@ -133,16 +136,18 @@
 
           <button class="button" type="submit">Показать</button>
         </form>
-        <h2 class="sorting">
+        <div class="catalog-right-column">
+         <div class="sorting">
+        <h2 class="sorting-title">
             сортировка:
         </h2>
-
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Популярные</option>
           <option value="cheap">Дешёвые</option>
           <option value="expensive">Дорогие</option>
         </select>
-      </div>
+        </div> 
+        <div class="background">
         <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link" href="product.html">
@@ -163,7 +168,8 @@
             <a class="product-card-link" href="product.html">
               <img class="product-card-image" src="images/product-4.jpg" alt="">
               <h3 class="product-card-title">Непотопляемая
-                селфи-палка</h3>
+                селфи-палка
+              </h3>
             </a>
             <span class="product-card-price">2500 ₽</span>
           </li>
@@ -183,19 +189,19 @@
             </a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link ">1</a>
+            <a class="pagination-link color">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
+            <a class="pagination-link color" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
+            <a class="pagination-link color" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
+            <a class="pagination-link color" href="#">...</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">15</a>
+            <a class="pagination-link color" href="#">15</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link pagination-next" href="#">
@@ -203,34 +209,37 @@
             </a>
           </li>
         </ul>
-      </section>
+      </div>
+       </div>
+       </section>
+     </div>
     </main>
     <footer class="page-footer">
-        <a href="index.html" class="footer-logo">
-          <img src="images/yeelow-logo.svg" alt="Логотип Интернет-магазин гаджетов Device">
-        </a>
-        <p class="footer-adress">
-          Санкт-Петербург, набережная
-          реки Карповки, 5, литера П.
-        </p>
-        <section class="nav-user">
-          <h2 class="visually-hidden">
-            Навигация для клиента
-          </h2>
-          <ul class="nav-user-item">
-           <li class="nav-user-link">
-             <a href="#">Доставка</a>
-           </li>
-           <li class="nav-user-link">
-            <a href="#">Гарантия</a>
-          </li>
-          <li class="nav-user-link">
-            <a href="#">Контакты</a>
-          </li>
-          </ul>
-        </section>
-        <a class="footer-contacts-telephone" href="tel:+7 (812) 812-12-12">+7 (812) 812-12-12</a>
-        <section class="socials">
+      <div class="container">
+        <div class="footer-logcontainer">
+      <a href="#" class="footer-logo">
+        <img src="images/yeelow-logo.svg" alt="Логотип Интернет-магазин гаджетов Device">
+      </a>
+      <address class="footer-adress">
+        Санкт-Петербург, набережная
+       <br> реки Карповки, 5, литера П.
+      </address>
+       </div>
+      <section class="nav-user-footer">
+        <h2 class="visually-hidden">
+          Навигация для клиента
+        </h2>
+        <ul class="nav-user-item">
+         <li class="nav-user-link">
+           <a href="#">Доставка</a>
+         </li>
+         <li class="nav-user-link">
+          <a href="#">Гарантия</a>
+        </li>
+        <li class="nav-user-link">
+          <a href="#">Контакты</a>
+        </li>
+        </ul>
           <ul class="socials-item">
             <li class="socials-link">
              <a href="https://www.facebook.com/htmlacademy">
@@ -248,10 +257,20 @@
               </a>
              </li>
           </ul>
-        </section>
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/profile/id1942651">
-          <img src="images/html-academy-logo.svg" alt="Логотип HTML Academy" class="htmlacademy-logo">
-        </a>
-      </footer>
+      </section>
+      <div class="footer-contacts-container">
+        <ul >
+          <li>
+      <a class="footer-contacts-telephone" href="tel:+7 (812) 812-12-12">Тел.: +7 (812) 812-12-12</a>
+          </li>
+          <li>
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/profile/id1942651">
+        <img src="images/html-academy-logo.svg" alt="Логотип HTML Academy" class="htmlacademy-logo">
+      </a>
+          </li>
+        </ul>
+     </div>
+    </div>
+    </footer>
   </body>
 </html>
