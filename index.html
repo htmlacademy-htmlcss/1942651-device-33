@@ -6,18 +6,19 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-   <header class="page-header">
+    <div class="wrapper">
+    <header class="page-header">
      <h1 class="visually-hidden">
        "Интернет-магазин гаджетов Device"
      </h1>
      <a href="#" class="header-logo">
        <img class="logo" src="images/black-logo.svg" alt="Логотип Интернет-магазин гаджетов Device">
      </a>
-     <div class="search">
-       <input type="text" class="serach-text" value="Текст поиска">
+     <div class="main-nav-user">
+      <div class="search">
+       <input type="text" class="serach-input" value="Текст поиска">
        <button type="submit" class="search-button">Найти</button>
-     </div>
-     <nav class="navigation">
+      </div>
        <ul class="nav-user">
          <li class="user-item">
            <a href="#" class="user-link">Войти</a>
@@ -29,8 +30,12 @@
           <a href="#" class="user-link">Корзина</a>
         </li>
       </ul>
-        <a href="#" class="catalog-title">Каталог товаров</a>
+     </div>
+      <nav class="navigation"></nav>
         <ul class="user-advantages">
+          <li class="user-advantages-item">
+            <a href="#" class="catalog-title">Каталог товаров</a>
+           </li>
           <li class="user-advantages-item">
            <a href="#" class="user-advantages-link">Доставка</a>
           </li>
@@ -41,7 +46,7 @@
            <a href="#" class="user-advantages-link">Контакты</a>
           </li>
         </ul>
-       <ul class="dropdown-catalog ">
+       <ul class="dropdown-catalog visually-hidden">
          <li class="catalog-item ">
            <a href="#" class="catalog-link">Виртуальная реальность</a>
          </li>
@@ -72,7 +77,7 @@
       <button class="slider-button slider-next" type="button">
         <span class="visually-hidden">Следущий товар</span>
       </button>
-      <img class="slider-image" src="images/slider-1.png" alt="Примеры товаров."  width="500">
+      <img class="slider-image" src="images/slider-1.png" alt="Примеры товаров."  width="520">
       <button class="slider-button slider-prev" type="button">
         <span class="visually-hidden">Предыдущий товар</span>
       </button>
@@ -91,10 +96,10 @@
       </a>
       <table class="specifications">
         <tr class="specifications-item">
-          <td class="specifications">
+          <td class="specifications-text">
             <span>800 M</span>
           </td>
-          <td class="specifications">
+          <td class="specifications-text">
            <span>50 M</span>
           </td>
         </tr>
@@ -126,7 +131,7 @@
       </ol>
     </div>
     </section>
-    <section class="product-list container">
+    <section class="product-list-main container">
       <h2 class="product-list-title visually-hidden">
         Список категорий товара
       </h2>
@@ -282,7 +287,7 @@
       Напишите нам
     </a>
     </section>
-  </div> 
+   </div> 
     <section class="distribution">
       <div class="container">
         <ul class="distribution-list">
@@ -317,8 +322,8 @@
     </ul>
     </div>
     </section>
-  </div>
-  </main>
+   </div>
+   </main>
     <footer class="page-footer">
       <div class="container">
         <div class="footer-logcontainer">
@@ -377,5 +382,6 @@
      </div>
     </div>
     </footer>
+  </div>
   </body>
 </html>

@@ -13,14 +13,14 @@
       <a href="#" class="header-logo">
         <img class="logo" src="images/black-logo.svg" alt="Логотип Интернет-магазин гаджетов Device">
       </a>
-      <div class="search">
-        <input type="text" class="serach-text" value="Текст поиска">
+      <div class="main-nav-user">
+       <div class="search">
+        <input type="text" class="serach-input" value="Текст поиска">
         <button type="submit" class="search-button">Найти</button>
-      </div>
-      <nav class="navigation">
+       </div>
         <ul class="nav-user">
           <li class="user-item">
-            <a href="#" class="user-link">Профиль</a>
+            <a href="#" class="user-link">Войти</a>
           </li>
           <li class="user-item">
            <a href="#" class="user-link">Сравнить</a>
@@ -29,8 +29,12 @@
            <a href="#" class="user-link">Корзина</a>
          </li>
        </ul>
-         <a href="#" class="catalog-title">Каталог товаров</a>
+      </div>
+       <nav class="navigation"></nav>
          <ul class="user-advantages">
+           <li class="user-advantages-item">
+             <a href="#" class="catalog-title">Каталог товаров</a>
+            </li>
            <li class="user-advantages-item">
             <a href="#" class="user-advantages-link">Доставка</a>
            </li>
@@ -41,7 +45,7 @@
             <a href="#" class="user-advantages-link">Контакты</a>
            </li>
          </ul>
-        <ul class="dropdown-catalog ">
+        <ul class="dropdown-catalog visually-hidden">
           <li class="catalog-item ">
             <a href="#" class="catalog-link">Виртуальная реальность</a>
           </li>
@@ -61,7 +65,9 @@
            <a href="#" class="catalog-link">Квадрокоптеры</a>
          </li>
         </ul>
+ 
       </nav>
+    </header>
     </header>
    <main class="catalog-main main-container-catalog">
        <header class="catalog-header container">
@@ -152,23 +158,29 @@
           <li class="product-card">
             <a class="product-card-link" href="product.html">
               <img class="product-card-image" src="images/product-2.jpg" alt="">
-              <h3 class="product-card-title">Любительская
-                селфи-палка</h3>
+              <h3 class="product-card-title">
+                Любительская
+                <br>селфи-палка
+              </h3>
             </a>
             <span class="product-card-price">500 ₽</span>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="product.html">
               <img class="product-card-image" src="images/product-3.jpg" alt="">
-              <h3 class="product-card-title">Профессиональная селфи-палка </h3>
+              <h3 class="product-card-title">
+                Профессиональная 
+                <br>селфи-палка 
+              </h3>
             </a>
             <span class="product-card-price">1500 ₽</span>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="product.html">
               <img class="product-card-image" src="images/product-4.jpg" alt="">
-              <h3 class="product-card-title">Непотопляемая
-                селфи-палка
+              <h3 class="product-card-title">
+                Непотопляемая
+                <br>селфи-палка
               </h3>
             </a>
             <span class="product-card-price">2500 ₽</span>
@@ -176,7 +188,10 @@
           <li class="product-card">
             <a class="product-card-link" href="product.html">
               <img class="product-card-image" src="images/product-5.jpg" alt="">
-              <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+              <h3 class="product-card-title">
+                Селфи-палка
+                <br>«Следуй за мной»
+              </h3>
             </a>
             <span class="product-card-price">1500 ₽</span>
           </li>
