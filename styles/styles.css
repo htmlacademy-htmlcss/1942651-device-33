@@ -1081,6 +1081,7 @@ a {
 }
 .footer-logcontainer {
   position: relative;
+  font-family: "Rubik", sans-serif;
 }
 .footer-logcontainer::before {
   content: '';
@@ -1203,6 +1204,7 @@ a {
   outline: 0;
 }
 .footer-contacts-telephone {
+  font-family: "Rubik", sans-serif;
   display: block;
   color: inherit;
   text-decoration: underline;
