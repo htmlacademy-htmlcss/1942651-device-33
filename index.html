@@ -9,13 +9,15 @@
     <div class="wrapper">
       <header class="page-header">
         <h1 class="visually-hidden">"Интернет-магазин гаджетов Device"</h1>
-        <a href="index.html" class="header-logo">
-          <img
-            class="logo"
-            src="images/black-logo.svg"
-            alt="Логотип Интернет-магазин гаджетов Device"
-          />
-        </a>
+        <div class="focus">
+          <a href="index.html" class="header-logo">
+            <img
+              class="logo"
+              src="images/black-logo.svg"
+              alt="Логотип Интернет-магазин гаджетов Device"
+            />
+          </a>
+        </div>
         <div class="main-nav-user">
           <div class="search">
             <input type="text" class="serach-input" value="Текст поиска" />
@@ -56,15 +58,17 @@
                 </svg>
                 Корзина
               </a>
-              <div class="popover popover-cart">
+              <div class="popover popover-cart popover-close">
                 <div class="popover-content">
                   <h2 class="popover-title visually-hidden">Корзина</h2>
                   <ul class="cart-items-list">
                     <li class="cart-item">
+                     <a href="" class="popover-link">
                       <img src="../1942651-device-33/images/product-1-small 5.jpg" width="39" height="43" alt="">
                        <span>Любительская
                        <br> селфи-палка
                        </span> 
+                      </a>
                       <button type="button" class="cart-item-button">
                         <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M10 1.68692L9.09091 0.777832L5 4.86874L0.909091 0.777832L0 1.68692L4.09091 5.77783L0 9.86874L0.909091 10.7778L5 6.68692L9.09091 10.7778L10 9.86874L5.90909 5.77783L10 1.68692Z" fill="white"/>
@@ -72,11 +76,13 @@
                       </button> 
                     </li>
                     <li class="cart-item">
+                     <a href="" class="popover-link-second">
                       <img src="../1942651-device-33/images/product-1-small 6.png" width="39" height="43" alt="">
                        <span> Профессиональная
                         <br> селфи-палка
                        </span> 
-                      <button type="button" class="cart-item-button">
+                      </a>
+                      <button type="button" class="cart-item-button second-close-button">
                         <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M10 1.68692L9.09091 0.777832L5 4.86874L0.909091 0.777832L0 1.68692L4.09091 5.77783L0 9.86874L0.909091 10.7778L5 6.68692L9.09091 10.7778L10 9.86874L5.90909 5.77783L10 1.68692Z" fill="white"/>
                         </svg>
@@ -157,23 +163,25 @@
               <h2 class="production-slides-title visually-hidden">
                 Презентация товаров
               </h2>
-              <button class="slider-button slider-prev" type="button">
-                <span class="visually-hidden">Предыдущий товар</span>
-                <svg class="prev-button" width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z" fill="black"/>
-                </svg>
-              </button>
               <img
                 class="slider-image"
                 src="images/slider-1.png"
                 alt="Примеры товаров."
               />
-              <button class="slider-button slider-next" type="button">
+              <div class="slider-controls">
+               <button class="slider-button slider-prev" type="button">
+                <span class="visually-hidden">Предыдущий товар</span>
+                <svg class="prev-button" width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z" fill="black"/>
+                </svg>
+               </button>
+               <button class="slider-button slider-next" type="button">
                 <span class="visually-hidden">Следущий товар</span>
                 <svg class="next-button" width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M-5.24537e-06 1.74846e-06L3.49999 1.44248e-06L20 30L3.5 60L0 60L16.2 30L-5.24537e-06 1.74846e-06Z" fill="black"/>
                 </svg>                  
               </button>
+             </div>
             </div>
             <div class="description">
               <h3 class="description-title">
@@ -218,73 +226,84 @@
             </h2>
             <ul class="product-item">
               <li class="product-item-item">
-               <div class="product-item-card">
+              <div class="focus">
+               <a href="#" class="product-links-link">
+                <div class="product-item-card">
                  <div class="product-links vr-logo">
                  </div>
                  <p>
-                   <a href="#" class="product-links-link">
-                     Виртуальная
-                     <br />
-                     реальность
-                   </a>
+                  Виртуальная
+                  <br />
+                  реальность
                  </p>
                 </div>
+               </a>
+              </div>
               </li>
               <li class="product-item-item">
-                <div class="product-item-card">
-                  <div class="product-links mono-logo">
-                  </div>
-                  <p>
-                    <a href="catalog.html" class="product-links-link">
+                <div class="focus">
+                  <a href="catalog.html" class="product-links-link">
+                   <div class="product-item-card">
+                    <div class="product-links mono-logo">
+                    </div>
+                    <p>
                       Моноподы
-                      <br />
-                      для селфи
-                    </a>
-                  </p>
+                      <br/>для селфи
+                    </p>
+                   </div>
+                  </a>
                  </div>
               </li>
               <li class="product-item-item">
-                <div class="product-item-card">
-                  <div class="product-links camera-logo">
-                  </div>
-                  <p>
-                    <a href="#" class="product-links-link">
+                <div class="focus">
+                  <a href="#" class="product-links-link">
+                   <div class="product-item-card">
+                    <div class="product-links camera-logo">
+                    </div>
+                    <p>
                       Экшн-камеры
-                    </a>
-                  </p>
+                    </p>
+                   </div>
+                  </a>
                  </div>
               </li>
               <li class="product-item-item">
-                <div class="product-item-card">
-                  <div class="product-links fitness-logo">
-                  </div>
-                  <p>
-                    <a href="#" class="product-links-link">
+                <div class="focus">
+                  <a href="#" class="product-links-link">
+                   <div class="product-item-card">
+                    <div class="product-links fitness-logo">
+                    </div>
+                    <p>
                       Фитнес-браслеты
-                    </a>
-                  </p>
+                    </p>
+                   </div>
+                  </a>
                  </div>
               </li>
               <li class="product-item-item">
-                <div class="product-item-card">
-                  <div class="product-links watch-logo">
-                  </div>
-                  <p>
-                    <a href="#" class="product-links-link">
+                <div class="focus">
+                  <a href="#" class="product-links-link">
+                   <div class="product-item-card">
+                    <div class="product-links watch-logo">
+                    </div>
+                    <p>
                       Умные часы
-                    </a>
-                  </p>
+                    </p>
+                   </div>
+                  </a>
                  </div>
               </li>
               <li class="product-item-item">
-                <div class="product-item-card">
-                  <div class="product-links copter-logo">
-                  </div>
-                  <p>
-                    <a href="#" class="product-links-link">
+                <div class="focus">
+                  <a href="#" class="product-links-link">
+                   <div class="product-item-card">
+                    <div class="product-links copter-logo">
+                    </div>
+                    <p>
                       Квадрокоптеры
-                    </a>
-                  </p>
+                    </p>
+                   </div>
+                  </a>
                  </div>
               </li>
             </ul>
@@ -293,7 +312,7 @@
             <div class="container">
               <ul class="main-user-advantages-item">
                 <li class="main-user-advantages-links">
-                  <a href="" class="curent-advantage">Доставка</a>
+                  <a href="" class="curent-advantage main-user-advantages-button">Доставка</a>
                 </li>
                 <li class="main-user-advantages-links">
                   <a href="" class="main-user-advantages-button"
@@ -323,7 +342,7 @@
               </ul>
             </div>
           </section>
-          <div class="delivery container">
+          <div class="delivery container" tabindex="0">
             <div class="delivery-logo">
             </div>
             <h2 class="delivery-text">Доставим редкий товар под заказ</h2>
@@ -359,7 +378,7 @@
               <address class="contacts-adress">
                 Санкт-Петербург, набережная реки Карповки, 5, литера П.
                 <br />
-                <a class="contacts-telephone" href="tel+7 (812) 812-12-12"
+                <a class="contacts-telephone" href="tel+7 (812) 812-12-12" tabindex="1"
                   >+7 (812) 812-12-12</a
                 >
               </address>
@@ -403,7 +422,6 @@
                       placeholder="Ваш e-mail"
                       type="email"
                       name="distribution-email"
-                      required
                     />
                     <button class="button newsletter-button" type="submit">
                       Подписаться
@@ -447,16 +465,16 @@
               </li>
             </ul>
             <ul class="socials-item">
-              <li class="socials-link facebook-icon">
-                <a href="https://www.facebook.com/htmlacademy">
+              <li class="socials-link facebook-icon" tabindex="0">
+                <a href="https://www.facebook.com/htmlacademy" tabindex="1">
                 </a>
               </li>
-              <li class="socials-link inst-icon">
-                <a href="https://www.instagram.com/htmlacademy/">
+              <li class="socials-link inst-icon" tabindex="0">
+                <a href="https://www.instagram.com/htmlacademy/" tabindex="1">
                 </a>
               </li>
-              <li class="socials-link twit-icon">
-                <a href="https://twitter.com/htmlacademy_ru">
+              <li class="socials-link twit-icon" tabindex="0">
+                <a href="https://twitter.com/htmlacademy_ru" tabindex="1">
                 </a>
               </li>
             </ul>
@@ -512,7 +530,7 @@
         <div class="mail-name-container">
          <form action="https://echo.htmlacademy.ru/" method="post">
           <legend class="title-modal-form">Ваш e-mail:</legend>
-          <input type="email" class="mail-log" placeholder="почта" required>
+          <input type="email" class="mail-log" placeholder="почта">
           <p class="joke">Забавный у вас адрес</p>
         </div>
        </div>
@@ -543,13 +561,13 @@
             </span>
           </legend>
           <div class="number">
-            <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">
+            <button class="number-minus" type="button" >
               <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 0H0V2H16V0Z" fill="black"/>
               </svg>
             </button>
             <input type="number" min="1" value="1" role="cell">
-            <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">
+            <button class="number-plus" type="button">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
               </svg>                
