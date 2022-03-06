@@ -39,7 +39,7 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 0 auto;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -60,7 +60,7 @@ a {
   text-decoration: none;
 }
 .page-header {
-  width: 1160px;
+  max-width: 1160px;
   margin: 0 auto;
   margin-top: 40px;
   color: #000000;
@@ -1359,7 +1359,7 @@ a {
 .htmlacademy-logo:hover {
   fill: #ffffff;
 }
-.htmlacademy-link:focus {
+.htmlacademy-logo:focus {
   outline: 2px solid #AF4FFF;
 }
 .htmlacademy-link:active {
