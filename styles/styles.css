@@ -1719,6 +1719,24 @@ a {
   font-size: 16px;
   line-height: 19px;
   color: #000000;
+  position: relative;
+}
+.breadcrumbs-item::after {
+  content: url("../images/arrow_breadcrumbs.svg");
+  position: absolute;
+  opacity: 0.3;
+  margin-left: 16px;
+}
+.breadcrumbs-item:nth-child(3)::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  margin-left: 16px;
+  background-color: #ffffff;
+}
+.breadcrumbs-link::after:last-child {
+  content: "";
 }
 .breadcrumbs-link:hover {
   opacity: 0.6;

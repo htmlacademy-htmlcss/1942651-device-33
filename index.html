@@ -16,6 +16,7 @@
               class="logo"
               src="images/black-logo.svg"
               alt="Логотип Интернет-магазин гаджетов Device"
+              width="145" height="36"
             />
           </a>
         </div>
@@ -168,6 +169,7 @@
                 class="slider-image"
                 src="images/slider-1.png"
                 alt="Примеры товаров."
+                width="560" height="560"
               />
               <div class="slider-controls">
                <button class="slider-button slider-prev" type="button">
@@ -338,6 +340,7 @@
                   <img
                     src="images/deliveryboy-logo.svg"
                     alt="Логотип доставки"
+                    width="136" height="164"
                   />
                 </li>
               </ul>
@@ -444,6 +447,7 @@
               <img
                 src="images/yeelow-logo.svg"
                 alt="Логотип Интернет-магазин гаджетов Device"
+                width="145" height="36"
               />
             </a>
             <address class="footer-adress">
@@ -516,29 +520,29 @@
     </div>
     <div class="modal-container-close modal-container">
       <div class="modal modal-auth">
-        <h2 class="modal-title">Доставка под заказ</h2>
-        <button type="button" class="modal-button-close">
+        <form action="https://echo.htmlacademy.ru/" method="get">
+         <h2 class="modal-title">Доставка под заказ</h2>
+         <button type="button" class="modal-button-close">
           <svg width="26" height="26" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M10 1.68692L9.09091 0.777832L5 4.86874L0.909091 0.777832L0 1.68692L4.09091 5.77783L0 9.86874L0.909091 10.7778L5 6.68692L9.09091 10.7778L10 9.86874L5.90909 5.77783L10 1.68692Z" fill="black"/>
             </svg>
         </button>
-       <div class="auth-date">
+        <div class="auth-date">
          <div class="log-name-container">
           <legend class="title-modal-form">Ваше имя:</legend>
-          <input type="text" class="log-name" placeholder="Введите имя">
+          <input type="text" class="log-name" placeholder="Введите имя" name="name">
            <p class="join-name visually-hidden">Добавьте имя</p>
          </div>
-        <div class="mail-name-container">
-         <form action="https://echo.htmlacademy.ru/" method="post">
+         <div class="mail-name-container">
           <legend class="title-modal-form">Ваш e-mail:</legend>
-          <input type="email" class="mail-log" placeholder="почта">
+          <input type="email" class="mail-log" placeholder="почта" name="mail">
           <p class="joke">Забавный у вас адрес</p>
+         </div>
         </div>
-       </div>
         <div class="what-u-need">
          <div class="free-form">
           <legend class="title-modal-form">Что нужно привезти:</legend>
-          <input class="free-form-input" type="text" placeholder="В свободной форме">
+          <input class="free-form-input" type="text" placeholder="В свободной форме" name="free-form">
          </div>
          <div>
           <legend class="title-modal-form">Количество:
@@ -567,16 +571,17 @@
                 <path d="M16 0H0V2H16V0Z" fill="black"/>
               </svg>
             </button>
-            <input type="number" min="1" value="1" role="cell">
+            <input type="number" min="1" value="1" role="cell" name="count">
             <button class="number-plus" type="button">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
               </svg>                
-            </button>
+             </button>
+           </div>
           </div>
          </div>
-        </div>
-        <input type="button" class="send-button-modal" value="Отправить">
+         <input type="submit" class="send-button-modal" value="Отправить">
+        </form>
        </div>
 
       </div>
