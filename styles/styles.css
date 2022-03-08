@@ -1698,9 +1698,6 @@ a {
   opacity: 0.3;
   margin-right: 6px;
 }
-.user-link-login-close:focus {
-  outline: 0;
-}
 .catalog-title-catalog {
   padding: 0;
   margin-left: 60px;
