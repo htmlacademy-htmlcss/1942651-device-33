@@ -462,9 +462,11 @@ a {
 }
 .user-advantages-item {
   margin-right: 44px;
-  
   align-self: baseline;
   position: relative;
+}
+.user-advantages-item:focus-within .close-dropdown {
+  display: block;
 }
 .user-advantages-item:nth-child(1) {
   margin-right: 0;
