@@ -19,7 +19,7 @@
       </a>
       <div class="main-nav-user">
         <div class="search">
-          <input type="text" class="serach-input" value="Текст поиска" />
+          <input type="text" class="search-input" value="Текст поиска" />
           <button type="submit" class="search-button">Найти</button>
         </div>
         <ul class="nav-user">
@@ -192,11 +192,11 @@
               </div>
             </div>
             <div class="range-wrapper-inputs">
-              <label class="catalog-filter-label">
-                от <input class="range-input" type="number" value="0" name="min-price">
+              <label class="catalog-filter-label" tabindex="0">
+                от <input class="range-input" type="number" value="0" name="min-price" tabindex="1">
               </label>
-              <label class="catalog-filter-label">
-                до <input class="range-input" type="number" value="5000" name="max-price" style="width: 40px;">
+              <label class="catalog-filter-label" tabindex="0">
+                до <input class="range-input" type="number" value="5000" name="max-price" style="width: 40px;" tabindex="1">
               </label>
             </div>
           </div>
@@ -279,9 +279,10 @@
           </button>
         </div> 
         <div class="background">
-        <ul class="product-list">
+        <ul class="product-list ">
           <li class="product-card" tabindex="1">
            <div class="product-card-focus" tabindex="0">
+             <span class="visually-hidden"></span>
             <a class="product-card-link" href="#" tabindex="1">
               <img class="product-card-image" src="images/product-2.jpg" width="360" height="380"  alt="" tabindex="1">
               <h3 class="product-card-title" tabindex="1">
@@ -301,6 +302,7 @@
           </li>
           <li class="product-card" tabindex="1">
            <div class="product-card-focus" tabindex="0">
+            <span class="visually-hidden"></span>
             <a class="product-card-link" href="product.html" tabindex="1">
               <img class="product-card-image" src="images/product-3.jpg" width="360" height="380" alt="">
               <h3 class="product-card-title" tabindex="1">
@@ -318,9 +320,9 @@
             <span class="product-card-price" tabindex="1">1 500 ₽</span>
            </div>
           </li>
-          
           <li class="product-card" tabindex="1">
            <div class="product-card-focus" tabindex="0">
+            <span class="visually-hidden"></span>
             <a class="product-card-link" href="#"  tabindex="1">
               <img class="product-card-image" src="images/product-4.jpg" width="360" height="380" alt="">
               <h3 class="product-card-title" tabindex="1">
@@ -340,6 +342,7 @@
           </li>
           <li class="product-card" tabindex="1">
            <div class="product-card-focus" tabindex="0">
+            <span class="visually-hidden"></span>
             <a class="product-card-link" href="#" tabindex="1">
               <img class="product-card-image" src="images/product-5.jpg" width="360" height="380" alt="">
               <h3 class="product-card-title">
