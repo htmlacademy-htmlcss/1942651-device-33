@@ -248,7 +248,7 @@ a {
   margin-right: 24px;
   margin-bottom: 0;
 }
-.serach-input {
+.search-input {
   border: 2px solid #000000;
   box-sizing: border-box;
   height: 40px;
@@ -267,11 +267,17 @@ a {
   color: rgba(0, 0, 0, 0.3);
   order: 0;
 }
-.serach-input:hover {
+.search-input:hover {
   color: #000000;
 }
-.serach-input:focus {
+.search-input:focus {
   outline: 2px solid #AF4FFF;
+}
+.search-input:active {
+  outline: 0;
+}
+.search-input:disabled {
+  opacity: 0.3;
 }
 .search-button {
   margin: 0;
@@ -297,6 +303,9 @@ a {
   color: #444444;
   background-color: #000000;
   outline: 0;
+}
+.search-button:disabled {
+  opacity: 0.3;
 }
 .nav-user {
   width: 498px;
