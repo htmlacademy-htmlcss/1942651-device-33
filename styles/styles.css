@@ -727,6 +727,9 @@ a {
   background: repeating-linear-gradient(#FFC700 , #FFC700 17px, #FFC700 10px, #FFC700 100px);
   outline: 0;
 }
+.description-button:disabled {
+  opacity: 0.3;
+}
 .spec-items {
   list-style-type: none;
   padding: 0;
@@ -852,6 +855,9 @@ a {
 .main-user-advantages-button:active {
   outline: 0;
   background: repeating-linear-gradient(#FFC700 , #FFC700 17px, #FFC700 10px, #FFC700 100px);
+}
+.main-user-advantages-button:disabled {
+  opacity: 0.3;
 }
 .curent-advantage{
   display: block;
@@ -1005,7 +1011,7 @@ a {
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  background: repeating-linear-gradient(#ffffff , #ffffff  15px, #ffe17f 10px, #ffe17f 25px);
+  background: repeating-linear-gradient(#ffffff , #ffffff  17px, #ffe17f 10px, #ffe17f 26px);
   color: inherit;
   height: 40px;
   padding-top: 11px;
@@ -1025,6 +1031,10 @@ a {
   outline: 0;
   background: repeating-linear-gradient(#FFC700 , #FFC700 17px, #FFC700 10px, #FFC700 100px);
 }
+.button-about-company:disabled,
+.button-contacts-company:disabled {
+  opacity: 0.3;
+}
 .button-contacts-company {
   display: block;
   font-family: "Raleway", sans-serif;
@@ -1033,7 +1043,7 @@ a {
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  background: repeating-linear-gradient(#ffffff , #ffffff  15px, #ffe17f 10px, #ffe17f 25px);
+  background: repeating-linear-gradient(#ffffff , #ffffff  16px, #ffe17f 10px, #ffe17f 24px);
   color: inherit;
   height: 40px;
   box-sizing: border-box;
@@ -1154,6 +1164,9 @@ a {
 .field:invalid {
   border-bottom: 3px solid #FF3D3D ;
 }
+.field:disabled {
+  opacity: 0.3;
+}
 .newsletter-button {
   box-sizing: border-box;
   background-color: #F0F0F0;
@@ -1177,6 +1190,9 @@ a {
   background-color: #000000;
   color: #444444;
   border: 3px solid #CECECE;
+}
+.newsletter-button:disabled {
+  opacity: 0.3;
 }
 .free {
   margin-bottom: 64px;
@@ -1453,6 +1469,9 @@ a {
   background-image: url("../images/login1.svg");
   background-repeat: no-repeat;
   background-position: 325px 25px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
 }
 .log-name::placeholder {
   font-family: "Rubik", sans-serif;
@@ -1464,6 +1483,16 @@ a {
 .log-name::after {
   content: url("../images/login.svg");
   position: absolute;
+}
+.log-name:hover {
+  background-color: #DCDCDC;
+}
+.log-name:focus {
+  outline: 2px solid #AF4FFF;
+}
+.log-name:disabled {
+  background: #F0F0F0;
+  opacity: 0.3;
 }
 .mail-log {
   width: 360px;
@@ -1488,14 +1517,12 @@ a {
 .mail-log::placeholder
 .mail-log:invalid {
   font-family: "Rubik", sans-serif;
-  color: #000000;
   font-size: 16px;
   line-height: 20px;
 }
 .mail-log::placeholder,
 .mail-log:valid {
   font-family: "Rubik", sans-serif;
-  color: #000000;
   font-size: 16px;
   line-height: 20px;
 }
@@ -1505,6 +1532,16 @@ a {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
+}
+.mail-log:hover {
+  background-color: #DCDCDC;
+}
+.mail-log:focus {
+  outline: 2px solid #AF4FFF;
+}
+.mail-log:disabled {
+  background: #F0F0F0;
+  opacity: 0.3;
 }
 .joke {
   font-family: "Rubik", sans-serif;
@@ -1514,6 +1551,7 @@ a {
   margin: 0;
   padding: 0;
   margin-top: 2px;
+  visibility: hidden;
 }
 .join-name {
   font-family: "Rubik", sans-serif;
@@ -1534,6 +1572,19 @@ a {
    background-color: #f0f0f0;
    margin-right: 40px;
    padding-left: 20px;
+   font-family: "Rubik", sans-serif;
+   font-size: 16px;
+   line-height: 20px;
+}
+.free-form-input:hover {
+  background-color: #DCDCDC;
+}
+.free-form-input:focus {
+  outline: 2px solid #AF4FFF;
+}
+.free-form-input:disabled {
+  background: #F0F0F0;
+  opacity: 0.3;
 }
 .free-form-input::placeholder {
   font-family: "Rubik", sans-serif;
@@ -1593,6 +1644,22 @@ a {
   top: 0;
   cursor: pointer;
   z-index: 1;
+}
+.number-button:hover {
+  opacity: 0.6;
+  background: #EBEBEB;
+}
+.number-button:focus {
+  outline: 2px solid #AF4FFF;
+}
+.number-button:active {
+  outline: 0;
+  opacity: 0.3;
+  background: #F0F0F0;
+}
+.number-button:disabled {
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0.3;
 }
 .tooltip-toggle {
   background-color: transparent;
@@ -1666,6 +1733,9 @@ a {
 .send-button-modal:active {
   outline: 0;
   background: repeating-linear-gradient(#FFC700 , #FFC700 17px, #FFC700 10px, #FFC700 100px);
+}
+.send-button-modal:disabled {
+  opacity: 0.3;
 }
 .catalog-main {
   background-color: #ffffff;
@@ -1836,6 +1906,9 @@ a {
   margin-left: -14px;
   margin-right: 80px;
 }
+.catalog-filter-label:focus {
+  outline: 2px solid #AF4FFF;
+}
 .range-input {
   font-family: "Rubik", sans-serif;
   width: 10px;
@@ -1874,6 +1947,15 @@ a {
   display: block;
   padding-left: 36px;
   cursor: pointer;
+}
+.control:hover {
+  opacity: 0.6;
+}
+.control:active {
+  opacity: 0.3;
+}
+.control:disabled {
+  opacity: 0.1;
 }
 .control-mark {
   position: absolute;
@@ -1959,6 +2041,9 @@ a {
   outline: 0;
   background: repeating-linear-gradient(#FFC700 , #FFC700  16px, #FFC700 10px, #FFC700 24px);
 }
+.button-submit:disabled {
+  opacity: 0.3;
+}
 .sorting {
   display: flex;
   text-align: center;
@@ -1997,6 +2082,9 @@ a {
 .select-control:active {
   outline: 0;
   opacity: 0.3;
+}
+.select-control:disabled {
+  opacity: 0.1;
 }
 .price {
   background-color: transparent;
@@ -2069,8 +2157,21 @@ a {
   column-gap: 40px;
   margin-bottom: 44px;
 }
+.new {
+  background-image: url("../images/new.svg");
+  position: absolute;
+  z-index: 2;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  top: 27px;
+  right: 27px;
+}
 .product-card-image {
   display: block;
+}
+.product-card {
+  position: relative;
 }
 .product-card-focus {
   display: grid;
@@ -2110,6 +2211,9 @@ a {
 .product-card:hover .hover-card {
   display: block;
   cursor: pointer;
+}
+.product-card:hover .new {
+  opacity: 0.3;
 }
 .hover-card {
   display: none;
@@ -2203,6 +2307,10 @@ a {
 }
 .more:active {
   outline: 0;
+  color: rgba(0, 0, 0, 0.3);
+  border: 3px solid #ebebeb;
+}
+.more:disabled {
   opacity: 0.3;
 }
 .pagination {
