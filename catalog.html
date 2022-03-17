@@ -8,6 +8,7 @@
   </head>
   <body>
     <header class="page-header">
+     <div class="container">
       <h1 class="visually-hidden">"Интернет-магазин гаджетов Device"</h1>
       <a href="index.html" class="header-logo">
         <img
@@ -68,7 +69,7 @@
                 <ul class="cart-items-list">
                   <li class="cart-item">
                    <a href="#" class="popover-link">
-                    <img src="images/product-1-small 5.jpg" width="39" height="43" alt="">
+                    <img src="images/product-1-small-5.jpg" width="39" height="43" alt="">
                      <span>Любительская
                      <br> селфи-палка
                      </span> 
@@ -81,7 +82,7 @@
                   </li>
                   <li class="cart-item">
                    <a href="#" class="popover-link-second">
-                    <img src="/images/product-1-small 6.png" width="39" height="43" alt="">
+                    <img src="images/product-1-small-6.png" width="39" height="43" alt="">
                      <span> Профессиональная
                       <br> селфи-палка
                      </span> 
@@ -120,7 +121,7 @@
               </svg>
               </a>
            <div class="close-dropdown">
-            <ul class="dropdown-catalog">
+            <div class="dropdown-catalog">
               <ul class="first-column">
                 <li class="catalog-item">
                   <a href="#" class="catalog-link">Виртуальная реальность</a>
@@ -145,7 +146,7 @@
                   <a href="#" class="catalog-link">Квадрокоптеры</a>
                 </li>
               </ul>
-            </ul>
+            </div>
            </div>
           </li>
           <li class="user-advantages-item">
@@ -159,12 +160,13 @@
           </li>
         </ul>
       </nav>
+     </div>
     </header>
    <main class="catalog-main main-container-catalog">
        <header class="catalog-header container">
-        <h1 class="catalog-title-catalog">
+        <h2 class="catalog-title-catalog">
             Моноподы для селфи
-        </h1>
+        </h2>
         <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -178,7 +180,7 @@
           </ul>
        </header> 
        <div class="page-container-catalog">
-       <section class="catalog-products">
+       <section class="catalog-products container">
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <h2 class="filter-title">Фильтр:</h2>
           <div class="range">
@@ -255,8 +257,8 @@
                   <span class="control-mark" tabindex="0"></span>
                   <span class="control-label">Нет</span>
                 </label>
+            </ul>
           </fieldset>
-
           <button class="button-submit" type="submit">Показать</button>
         </form>
         <div class="catalog-right-column">
@@ -283,7 +285,7 @@
           <li class="product-card" tabindex="1">
            <div class="product-card-focus" tabindex="0">
             <a class="product-card-link" href="#" tabindex="1">
-              <img class="product-card-image" src="images/product-2.jpg" width="360" height="380"  alt="" tabindex="1">
+              <img class="product-card-image" src="images/product-2.jpg" width="360" height="380"  alt="">
               <h3 class="product-card-title" tabindex="1">
                 Любительская
                 <br>селфи-палка
@@ -339,12 +341,12 @@
                 Селфи-палка «Следуй
                 <br> за мной»
               </h3>
+            </a>
               <div class="hover-card">
                 <div class="hover-card-container">
                  <button class="hover-card-button">Подробнее</button>
                 </div>
               </div>
-            </a>
             <span class="product-card-price">1 500 ₽</span>
            </div>
           </li>
@@ -389,6 +391,7 @@
             <img
               src="images/yeelow-logo.svg"
               alt="Логотип Интернет-магазин гаджетов Device"
+              width="145" height="36"
             />
           </a>
           <address class="footer-adress">
@@ -413,6 +416,7 @@
           <ul class="socials-item">
             <li>
               <a class="socials-link" href="https://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">facebook</span>
                 <svg width="9" height="19" viewBox="0 0 9 19"  xmlns="http://www.w3.org/2000/svg">
                   <g opacity="0.6" clip-path="url(#clip0_11534_7027)">
                   <g clip-path="url(#clip1_11534_7027)">
@@ -432,6 +436,7 @@
             </li>
             <li>
               <a class="socials-link" href="https://www.instagram.com/htmlacademy/" >
+                <span class="visually-hidden">instagram</span>
                 <svg width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
                   <g opacity="0.6" clip-path="url(#clip0_11534_7006)">
                   <g clip-path="url(#clip1_11534_7006)">
@@ -452,6 +457,7 @@
             </li>
             <li>
               <a class="socials-link" href="https://twitter.com/htmlacademy_ru">
+                <span class="visually-hidden">twitter</span>
                 <svg width="16" height="15" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
                   <g opacity="0.6" clip-path="url(#clip0_11534_7046)">
                   <g clip-path="url(#clip1_11534_7046)">
@@ -476,7 +482,7 @@
             <li>
               <a
                 class="footer-contacts-telephone"
-                href="tel:+7 (812) 812-12-12"
+                href="tel:+7(812)812-12-12"
                 >Тел.: +7 (812) 812-12-12</a
               >
             </li>
@@ -484,6 +490,7 @@
               <a
                 class="htmlacademy-link"
                 href="https://htmlacademy.ru/profile/id1942651">
+                <span class="visually-hidden">htmlacademy</span>
                 <svg class="htmlacademy-logo" width="115" height="33" viewBox="0 0 115 33" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 12.9V15.5H2.5V12.9H0Z"/>
                   <path d="M11.6 4.5C10 4.5 8.8 5.2 8 6.2H7.9V0H5.9V15.5H7.9V10.2C7.9 8.1 9.2 6.6 11.2 6.6C13 6.6 14.1 8 14.1 9.8V15.5H16.1V9.4C16.2 6.4 14.3 4.5 11.6 4.5Z" />

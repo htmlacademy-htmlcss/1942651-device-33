@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Девайс</title>
-    <link rel="icon" type="image/svg" sizes="32x32" href="../1942651-device-33/images/Favicon.svg">
+    <link rel="icon" type="image/svg" sizes="32x32" href="./images/Favicon.svg">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <div class="wrapper">
-      <header class="page-header ">
+      <header class="page-header">
+       <div class="container">
         <h1 class="visually-hidden">"Интернет-магазин гаджетов Device"</h1>
         <div class="focus">
           <a href="index.html" class="header-logo">
@@ -21,10 +22,12 @@
           </a>
         </div>
         <div class="main-nav-user">
+          <form action="https://echo.htmlacademy.ru/" method="post">
           <div class="search">
-            <input type="text" class="search-input" value="Текст поиска">
+            <input type="text" class="search-input" value="Текст поиска" name="поиск">
             <button type="submit" class="search-button">Найти</button>
           </div>
+          </form>
           <ul class="nav-user">
             <li class="user-item">
               <a href="#" class="user-link-login">
@@ -66,7 +69,7 @@
                   <ul class="cart-items-list">
                     <li class="cart-item">
                      <a href="#" class="popover-link">
-                      <img src="/images/product-1-small 5.jpg" width="39" height="43" alt="">
+                      <img src="./images/product-1-small-5.jpg" width="39" height="43" alt="">
                        <span>Любительская
                        <br> селфи-палка
                        </span> 
@@ -78,8 +81,8 @@
                       </button> 
                     </li>
                     <li class="cart-item">
-                     <a href="" class="popover-link-second">
-                      <img src="/images/product-1-small 6.png" width="39" height="43" alt="">
+                     <a href="#" class="popover-link-second">
+                      <img src="./images/product-1-small-6.png" width="39" height="43" alt="">
                        <span> Профессиональная
                         <br> селфи-палка
                        </span> 
@@ -118,7 +121,7 @@
                 </svg>
                 </a>
              <div class="close-dropdown">
-              <ul class="dropdown-catalog">
+              <div class="dropdown-catalog">
                 <ul class="first-column">
                   <li class="catalog-item">
                     <a href="#" class="catalog-link">Виртуальная реальность</a>
@@ -143,7 +146,7 @@
                     <a href="#" class="catalog-link">Квадрокоптеры</a>
                   </li>
                 </ul>
-              </ul>
+              </div>
              </div>
             </li>
             <li class="user-advantages-item">
@@ -157,10 +160,12 @@
             </li>
           </ul>
         </nav>
+       </div>
       </header>
       <main class="index-main main-container">
         <div class="page-container">
-          <section class="production-slides container">
+          <section class="production-slides">
+           <div class="container">
             <div class="slide-container-item">
               <h2 class="production-slides-title visually-hidden">
                 Презентация товаров
@@ -222,6 +227,7 @@
                 </li>
               </ol>
             </div>
+           </div>
           </section>
           <section class="production-slides container visually-hidden">
             <div class="slide-container-item-2">
@@ -412,7 +418,8 @@
                   <a href="#" class="main-user-advantages-button">Кредит</a>
                 </li>
               </ul>
-              <div class="service">
+              <div class="service-slide">
+                <div class="service deliveryboy-logo">
                   <h2 class="service-title">Доставка</h2>
                   <p class="service-text">
                     Мы с удовольствием доставим ваш товар прямо
@@ -420,77 +427,27 @@
                     к вашему подъезду совершенно бесплатно! Ведь <br />
                     мы неплохо заработаем, поднимая  его на ваш этаж.
                   </p>
-                  <img class="deliveryboy-logo"
-                    src="images/deliveryboy-logo.svg"
-                    alt="Логотип доставки"
-                    width="136" height="164"
-                  />
-              </div>
-            </div>
-          </section>
-          <section class="main-user-advantages visually-hidden">
-            <div class="container">
-              <ul class="main-user-advantages-item">
-                <li class="main-user-advantages-links">
-                  <a href="#" class="main-user-advantages-button first-button">Доставка</a>
-                </li>
-                <li class="main-user-advantages-links">
-                  <a href="#" class="curent-advantage main-user-advantages-button"
-                    >Гарантия</a
-                  >
-                </li>
-                <li class="main-user-advantages-links">
-                  <a href="#" class="main-user-advantages-button">Кредит</a>
-                </li>
-              </ul>
-              <div class="service">
+                </div>
+                <div class="service garantie-logo close-slide">
                   <h2 class="service-title">Гарантия</h2>
                   <p class="service-text">
                     Если из-за возгорания купленного у нас товара у вас
                     <br> сгорит дом — не переживайте, мы выдадим вам новый.
                     <br> Товар, не дом, конечно же.
                   </p>
-                  <img class="garantie-logo"
-                    src="images/garantie.svg"
-                    alt="Логотип доставки"
-                    width="136" height="164"
-                  />
-              </div>
-            </div>
-          </section>
-          <section class="main-user-advantages visually-hidden">
-            <div class="container">
-              <ul class="main-user-advantages-item">
-                <li class="main-user-advantages-links">
-                  <a href="#" class="main-user-advantages-button first-button">Доставка</a>
-                </li>
-                <li class="main-user-advantages-links">
-                  <a href="#" class="main-user-advantages-button"
-                    >Гарантия</a
-                  >
-                </li>
-                <li class="main-user-advantages-links">
-                  <a href="#" class="curent-advantage main-user-advantages-button">Кредит</a>
-                </li>
-              </ul>
-              <div class="service">
-                  <h2 class="service-title">Кредит</h2>
-                  <p class="service-text">
-                    Залезть в долговую яму стало проще! Кредитные
-                    <br> консультанты подберут для вас наиболее выгодные 
-                    <br>условия кредита. Выгодные для банка, разумеется.
-                  </p>
-                  <img class="credit-logo"
-                    src="images/credit.svg"
-                    alt="Логотип доставки"
-                    width="136" height="164"
-                  />
+                </div>
+                <div class="service credit-logo close-slide">
+                        <h2 class="service-title">Кредит</h2>
+                        <p class="service-text">
+                          Залезть в долговую яму стало проще! Кредитные
+                          <br> консультанты подберут для вас наиболее выгодные 
+                          <br>условия кредита. Выгодные для банка, разумеется.
+                        </p>
+                </div>
               </div>
             </div>
           </section>
           <div class="delivery container" tabindex="0">
-            <div class="delivery-logo">
-            </div>
             <h2 class="delivery-text">Доставим редкий товар под заказ</h2>
           </div>
           <div class="flex-container container">
@@ -524,7 +481,7 @@
               <address class="contacts-adress">
                 Санкт-Петербург, набережная реки Карповки, 5, литера П.
                 <br />
-                <a class="contacts-telephone" href="tel+7 (812) 812-12-12" tabindex="1"
+                <a class="contacts-telephone" href="tel+7(812)812-12-12" tabindex="1"
                   >+7 (812) 812-12-12</a
                 >
               </address>
@@ -606,6 +563,7 @@
             <ul class="socials-item">
               <li>
                 <a class="socials-link" href="https://www.facebook.com/htmlacademy">
+                  <span class="visually-hidden">facebook</span>
                   <svg width="9" height="19" viewBox="0 0 9 19"  xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.6" clip-path="url(#clip0_11534_7027)">
                     <g clip-path="url(#clip1_11534_7027)">
@@ -625,6 +583,7 @@
               </li>
               <li>
                 <a class="socials-link" href="https://www.instagram.com/htmlacademy/" >
+                  <span class="visually-hidden">instagram</span>
                   <svg width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.6" clip-path="url(#clip0_11534_7006)">
                     <g clip-path="url(#clip1_11534_7006)">
@@ -645,6 +604,7 @@
               </li>
               <li>
                 <a class="socials-link" href="https://twitter.com/htmlacademy_ru">
+                  <span class="visually-hidden">twitter</span>
                   <svg width="16" height="15" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.6" clip-path="url(#clip0_11534_7046)">
                     <g clip-path="url(#clip1_11534_7046)">
@@ -669,7 +629,7 @@
               <li>
                 <a
                   class="footer-contacts-telephone"
-                  href="tel:+7 (812) 812-12-12"
+                  href="tel:+7(812)812-12-12"
                   >Тел.: +7 (812) 812-12-12</a
                 >
               </li>
@@ -677,6 +637,7 @@
                 <a
                   class="htmlacademy-link"
                   href="https://htmlacademy.ru/profile/id1942651" tabindex="1">
+                  <span class="visually-hidden">htmlacademy</span>
                   <svg class="htmlacademy-logo" width="115" height="33" viewBox="0 0 115 33" xmlns="http://www.w3.org/2000/svg" tabindex="0">
                     <path d="M0 12.9V15.5H2.5V12.9H0Z"/>
                     <path d="M11.6 4.5C10 4.5 8.8 5.2 8 6.2H7.9V0H5.9V15.5H7.9V10.2C7.9 8.1 9.2 6.6 11.2 6.6C13 6.6 14.1 8 14.1 9.8V15.5H16.1V9.4C16.2 6.4 14.3 4.5 11.6 4.5Z" />
@@ -709,24 +670,27 @@
         </button>
         <div class="auth-date">
          <div class="log-name-container">
-          <legend class="title-modal-form">Ваше имя:</legend>
-          <input type="text" class="log-name" placeholder="Введите имя" name="name">
+          <label class="title-modal-form">Ваше имя:
+           <input type="text" class="log-name" placeholder="Введите имя" name="name">
+          </label>
            <p class="join-name visually-hidden">Добавьте имя</p>
          </div>
          <div class="mail-name-container">
-          <legend class="title-modal-form">Ваш e-mail:</legend>
-          <input type="email" class="mail-log" placeholder="Введите e-mail" name="mail">
+          <label class="title-modal-form">Ваш e-mail:
+           <input type="email" class="mail-log" placeholder="Введите e-mail" name="mail">
+          </label>
           <p class="joke">Забавный у вас адрес</p>
          </div>
         </div>
         <div class="what-u-need">
          <div class="free-form">
-          <legend class="title-modal-form">Что нужно привезти:</legend>
-          <input class="free-form-input" type="text" placeholder="В свободной форме" name="free-form">
-         </div>
+          <label class="title-modal-form">Что нужно привезти:
+           <input class="free-form-input" type="text" placeholder="В свободной форме" name="free-form">
+          </label>         
+          </div>
          <div>
-          <legend class="title-modal-form">Количество:
-            <span class="tooltip">
+          <label for="counter" class="title-modal-form">Количество:</label>
+          <span class="tooltip">
               <button aria-labelledby="tooltip-label" class="tooltip-toggle" type="button">
                 <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="13" cy="13" r="13" fill="#FFE17F"/>
@@ -734,24 +698,22 @@
                   <path d="M14 11H12V19H14V11Z" fill="black"/>
                   </svg>                  
               </button>
-              <span class="tooltip-text" role="tooltip">
+              <span class="tooltip-text" role="tooltip" id="tooltip-label">
                 Постараемся найти, 
                 сколько нужно. 
                 Привезём сколько
                 получится по 
                 требованиям 
                 к провозу багажа.
-              </span>
-                </span>
-            </span>
-          </legend>
+             </span>
+          </span>
           <div class="number">
             <button class="number-button number-minus" type="button" >
               <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 0H0V2H16V0Z" fill="black"/>
               </svg>
             </button>
-            <input type="number" min="1" value="1" role="cell" name="count">
+            <input type="number" min="1" value="1" name="count" id="counter">
             <button class="number-button number-plus" type="button">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
@@ -763,8 +725,6 @@
          <input type="submit" class="send-button-modal" value="Отправить">
         </form>
        </div>
-
       </div>
-    </div>
   </body>
 </html>
