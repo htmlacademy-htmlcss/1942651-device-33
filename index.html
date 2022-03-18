@@ -24,7 +24,8 @@
         <div class="main-nav-user">
           <form action="https://echo.htmlacademy.ru/" method="post">
           <div class="search">
-            <input type="text" class="search-input" value="Текст поиска" name="поиск">
+            <label class="visually-hidden" for="search-input">Поиск</label>
+            <input type="text" class="search-input" value="Текст поиска" name="поиск" id="search-input">
             <button type="submit" class="search-button">Найти</button>
           </div>
           </form>
@@ -515,11 +516,13 @@
                     action="https://echo.htmlacademy.ru/"
                     method="post"
                   >
+                  <label class="visually-hidden" for="email">email</label>
                     <input
                       class="field"
                       placeholder="Ваш e-mail"
                       type="email"
                       name="distribution-email"
+                      id="email"
                     />
                     <button class="button newsletter-button" type="submit">
                       Подписаться

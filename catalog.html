@@ -19,10 +19,13 @@
         />
       </a>
       <div class="main-nav-user">
-        <div class="search">
-          <input type="text" class="search-input" value="Текст поиска" />
+        <form action="https://echo.htmlacademy.ru/" method="post">
+         <div class="search">
+          <label class="visually-hidden" for="search-input">Поиск</label>
+          <input type="text" class="search-input" value="Текст поиска" name="поиск" id="search-input">
           <button type="submit" class="search-button">Найти</button>
-        </div>
+         </div>
+        </form>
         <ul class="nav-user">
           <li class="user-item">
             <a href="#" class="user-link-login-name">

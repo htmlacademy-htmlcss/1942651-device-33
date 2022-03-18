@@ -244,7 +244,7 @@ a {
 }
 .search {
   display: grid;
-  grid-template-columns: 360px 160px;
+  grid-template-columns: 358px 160px;
   margin-top: 44px;
   padding: 0px;
   margin-right: 24px;
@@ -252,8 +252,9 @@ a {
 }
 .search-input {
   border: 2px solid #000000;
+  border-right: 1px solid #000000;
   box-sizing: border-box;
-  height: 40px;
+  min-height: 40px;
   border-radius: 50px 0px 0px 50px;
   background-color: #ffe17f;
   font-family: "Rubik", sans-serif;
@@ -282,17 +283,18 @@ a {
   opacity: 0.3;
 }
 .search-button {
+  padding: 0;
   margin: 0;
   border: 2px solid #000000;
-  height: 40px;
+  min-height: 40px;
   box-sizing: border-box;
   border-radius: 0px 50px 50px 0px;
-  border-left: 0;
+  border-left: 1px solid #000000;
   background-color: #ffe17f;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  width: 158px;
+  min-width: 160px;
 }
 .search-button:hover {
   color: #f0f0f0;
@@ -1200,8 +1202,8 @@ a {
 }
 .field {
   box-sizing: border-box;
-  width: 557px;
-  height: 55px;
+  width: 560px;
+  min-height: 55px;
   border: 0;
   border-bottom: 3px solid #c4c4c4 ;
   background-color: #f0f0f0;
@@ -1227,7 +1229,7 @@ a {
   box-sizing: border-box;
   background-color: #f0f0f0;
   border: 3px solid #cecece;
-  width: 253px;
+  min-width: 253px;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -1235,7 +1237,9 @@ a {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   padding-left: 14px;
-  height: 55px;
+  padding-right: 14px;
+  min-height: 55px;
+  margin-right: 40px;
 }
 .newsletter-button:hover {
   color: #ffffff;
@@ -1268,6 +1272,7 @@ a {
   padding: 0;
   margin: 0;
   list-style: none;
+  margin-bottom: 56px;
 }
 .page-footer {
   width: 100%;
@@ -1277,7 +1282,7 @@ a {
 }
 .page-footer .container {
   display: grid;
-  grid-template-columns: max-content 1fr 175px;
+  grid-template-columns: 236px 1fr 175px;
 }
 .footer-logcontainer {
   position: relative;
@@ -1363,7 +1368,7 @@ a {
   font-style: normal;
   font-size: 16px;
   line-height: 19px;
-  margin-bottom: 3px;
+  margin-bottom: 140px;
 }
 .socials-link:active {
   outline: 0;
