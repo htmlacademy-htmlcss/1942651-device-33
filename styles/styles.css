@@ -1200,6 +1200,9 @@ a {
   margin-top: 73px;
   margin-right: 28px;
 }
+.newsletter-container {
+  display: flex;
+}
 .field {
   box-sizing: border-box;
   width: 560px;
@@ -1256,10 +1259,10 @@ a {
   opacity: 0.3;
 }
 .free {
-  margin-bottom: 64px;
   color: #444444;
   position: relative;
-  top: -6px;
+  margin-left: auto;
+  top: -5px;
 }
 .free::before {
   content: url("../images/free.svg");
@@ -1272,7 +1275,7 @@ a {
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-bottom: 56px;
+  margin-bottom: 58px;
 }
 .page-footer {
   width: 100%;
@@ -1297,7 +1300,7 @@ a {
   height: 7px;
   background-color: #ffc700;
   position: absolute;
-  bottom: 79px;
+  bottom: 89px;
   left: 1px;
 }
 .footer-logo {
@@ -1356,6 +1359,7 @@ a {
   background-color:rgba(255, 255, 255, 0.3);
   margin-right: 15px;
   border-radius: 50%;
+  margin-bottom: 10px;
 }
 .socials-link:hover {
   background-color: #ffc700;
